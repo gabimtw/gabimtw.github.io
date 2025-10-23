@@ -1,0 +1,111 @@
+/* ==========================================================
+   style.css — Conteúdo centralizado no eixo horizontal
+   Gabi Monteiro 🌿
+   ========================================================== */
+
+/* ---------- Variáveis ---------- */
+:root {
+  --font-main: "Perpetua", "Georgia", serif;
+
+  /* Tons de azul */
+  --blue-900: #052F5F;
+  --blue-700: #0B5FA5;
+  --blue-500: #1E90FF;
+  --blue-300: #81C3FF;
+  --blue-100: #E8F5FF;
+
+  --bg-page: var(--blue-100);
+  --text-color: var(--blue-900);
+  --accent: var(--blue-500);
+
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(6, 30, 60, 0.08);
+  --space: 1.2rem;
+  --max-width: 900px;
+}
+
+/* ---------- Corpo da página ---------- */
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center; /* centraliza textos e conteúdo inline */
+}
+
+/* ---------- Container principal ---------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto; /* centraliza o bloco no meio da página */
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: calc(var(--space) * 2);
+}
+
+/* ---------- Títulos e textos ---------- */
+h1, h2 {
+  color: var(--blue-700);
+  margin-top: 0;
+}
+
+p {
+  color: #345a82;
+  line-height: 1.6;
+  margin-bottom: var(--space);
+}
+
+/* ---------- Imagens e vídeos ---------- */
+img, video {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: var(--radius);
+  margin: var(--space) auto; /* centraliza e dá espaço vertical */
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 700px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- Dark Mode ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-page: #071829;
+    --text-color: #E8F5FF;
+    --blue-700: #97caff;
+    --blue-500: #5fb3ff;
+  }
+
+  body {
+    background: linear-gradient(180deg, #021426 0%, #071829 100%);
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+  }
+}
