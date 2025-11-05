@@ -1,25 +1,170 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioMaket - Site Teste</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BioMaket — Núcleo, Cromossomos e Câncer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Vídeo introdutório sobre nosso grupo:</h1>
-    <video width="400" controls>
+  <!-- Navegação -->
+  <header class="navbar">
+    <h1 class="logo">BioMaket</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#nucleo">Núcleo</a></li>
+        <li><a href="#cromossomos">Cromossomos</a></li>
+        <li><a href="#cancer">Câncer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Home -->
+  <section id="home" class="hero hero-home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Explorando o Coração da Vida</h2>
+      <p>Descubra como o <strong>núcleo</strong> e os <strong>cromossomos</strong> desempenham um papel fundamental na célula — e como alterações neles podem causar o <strong>câncer</strong>.</p>
+      <a href="#nucleo" class="btn">Começar</a>
+    </div>
+  </section>
+
+ <!-- Seção Vídeos Gerais -->
+<section id="videos-gerais" class="section-videos-gerais">
+  <div class="container">
+    <h2>Conhecendo um pouco sobre nós</h2>
+
+    <div class="image-area">
+      <video controls>
         <source src="video.mp4" type="video/mp4">
-    </video>
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
+    <p class="caption">Vídeo introdutório sobre o grupo.</p>
+<br><br>
+    <h2>Agora, que tal assistir um vídeo curto sobre todo o assunto abordado?</h2>
 
-    <h2>Núcleo</h2>
-    <p>NÚCLEO CELULAR 
-O núcleo celular é uma estrutura que abriga o DNA presente nas células eucariontes. A presença dele nesse tipo de célula é um dos aspectos que as caracteriza, na medida em que células procariontes não possuem a membrana que envolve o núcleo nos eucariontes e o material genético fica disperso no citoplasma.
-O núcleo contém nucleoplasma, substância onde fica mergulhado o material genético e as estruturas que são importantes para que desempenhe suas funções, como os nucléolos. E também há a carioteca ou membrana celular, que delimita o núcleo e envolve o material genético. Representação da estrutura do núcleo e sua ligação com o retículo e os ribossomos.
-O núcleo é como o "cérebro" da célula, pois é a partir dele que partem as "decisões".
-</p>
-    <img src="imagem.jpg" width="400">
-    <h3>Imagem ilustrativa de uma célula</h3>
+    <div class="image-area">
+      <video controls>
+        <source src="videoGeral.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
 
+    <p class="caption">Vídeo geral sobre os temas abordados.</p>
+  </div>
+</section>
+
+
+  <!-- Seção Núcleo -->
+  <section id="nucleo" class="section-nucleo">
+    <div class="container">
+      <h2>O Núcleo Celular</h2>
+      <p class="intro">
+        O núcleo é o centro de controle da célula. Ele armazena o material genético e coordena todas as atividades celulares,
+        como crescimento, divisão e síntese de proteínas.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🔬 Estrutura</h3>
+          <p>O núcleo é envolvido por uma <strong>membrana dupla</strong> chamada envelope nuclear, que protege o DNA.
+          Ele possui poros que controlam o que entra e sai do núcleo, além do <strong>nucléolo</strong>, onde são formados os ribossomos.</p>
+        </div>
+
+        <div class="card">
+          <h3>⚙️ Funções</h3>
+          <p>O núcleo <strong>armazena o DNA</strong> e <strong>controla a expressão gênica</strong>.
+          Ele também participa da replicação do DNA e coordena o ciclo celular, garantindo que a informação genética
+          seja transmitida corretamente para as células-filhas.</p>
+        </div>
+
+        <div class="card">
+          <h3>🧠 Importância</h3>
+          <p>Sem o núcleo, a célula não conseguiria sobreviver por muito tempo, pois ele é responsável por regular
+          praticamente todas as funções vitais. É o verdadeiro “cérebro” da célula!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Cromossomos -->
+  <section id="cromossomos" class="section-cromossomos">
+    <div class="container">
+      <h2>Cromossomos: o Código da Vida</h2>
+      <p class="intro">
+        Os cromossomos são estruturas formadas por DNA e proteínas, que carregam toda a informação genética de um organismo.
+        Eles garantem que cada célula tenha uma cópia completa do material genético.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🧬 Estrutura</h3>
+          <p>Os cromossomos são longas moléculas de <strong>DNA</strong> enroladas em proteínas chamadas <strong>histonas</strong>.
+          Essa combinação forma a <em>cromatina</em>, que se condensa durante a divisão celular para formar os cromossomos visíveis ao microscópio.</p>
+        </div>
+
+        <div class="card">
+          <h3>📈 Quantidade</h3>
+          <p>Nas células humanas existem <strong>46 cromossomos</strong>, organizados em 23 pares.
+          Metade vem do pai e metade da mãe, garantindo a variabilidade genética e a herança dos traços familiares.</p>
+        </div>
+
+        <div class="card">
+          <h3>⚠️ Alterações</h3>
+          <p>Mutações ou mudanças na estrutura dos cromossomos podem causar doenças genéticas ou
+          predispor ao desenvolvimento de <strong>câncer</strong>. Exemplos incluem deleções, duplicações e translocações cromossômicas.</p>
+        </div>
+      </div>
+
+      <div class="image-area">
+        <img src="cromossomo.jpg" alt="Imagem ilustrativa de cromossomos">
+        <p class="caption">Representação artística dos cromossomos e do DNA dentro do núcleo celular.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Câncer -->
+  <section id="cancer" class="section-cancer">
+    <div class="cancer-hero">
+      <h2>O que é o Câncer?</h2>
+      <p>O câncer é uma doença causada pelo crescimento descontrolado de células anormais. Essas células se multiplicam rapidamente, formando tumores que podem se espalhar pelo corpo.</p>
+    </div>
+
+    <div class="container content-cancer">
+      <h2>Como o Câncer se Relaciona ao Núcleo e aos Cromossomos</h2>
+      <p>O núcleo celular guarda o DNA, que contém as instruções para o funcionamento da célula. Quando ocorrem mutações — alterações nesse DNA — os cromossomos podem carregar informações incorretas. Se essas mutações afetam genes que controlam o ciclo celular, o resultado pode ser o desenvolvimento do câncer.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Mutação Genética</h3>
+          <p>As mutações podem ser causadas por fatores externos, como radiação e substâncias químicas, ou ocorrer de forma natural. Elas alteram o DNA e podem ativar genes que estimulam o crescimento descontrolado das células.</p>
+        </div>
+
+        <div class="card">
+          <h3>Divisão Celular Desregulada</h3>
+          <p>Em células saudáveis, o núcleo controla quando a célula deve se dividir. No câncer, esse controle é perdido, e a célula passa a se dividir sem parar, formando tumores.</p>
+        </div>
+
+        <div class="card">
+          <h3>Metástase</h3>
+          <p>Algumas células cancerígenas conseguem se desprender do tumor original e se espalhar pelo corpo através do sangue ou da linfa, formando novos tumores em outros órgãos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Scroll suave para âncoras (mantém comportamento)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
 </body>
 </html>
+
